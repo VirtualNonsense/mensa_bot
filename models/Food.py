@@ -1,4 +1,5 @@
 from datetime import datetime
+from typing import *
 
 
 class Food:
@@ -17,6 +18,6 @@ class Food:
 
 
 class Menu:
-    def __init__(self, date: datetime, food: list):
+    def __init__(self, date: datetime, food: List[Food]):
         self.date = date
         self.food = food
