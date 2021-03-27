@@ -107,4 +107,6 @@ fabric.properties
 # misc
 secret_stuff.py
 
+*.pkl
+
 # End of https://www.toptal.com/developers/gitignore/api/pycharm
