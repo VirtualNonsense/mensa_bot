@@ -1,7 +1,7 @@
 from telegram.ext import (Updater, CallbackQueryHandler, MessageHandler, CommandHandler, StringCommandHandler, Filters,
                           PicklePersistence)
 
-from skills.menu import MensaMenuHandler
+from mensa_bot.skills.menu import MensaMenuHandler
 
 
 class MensaBot:

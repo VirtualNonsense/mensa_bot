@@ -108,5 +108,6 @@ fabric.properties
 secret_stuff.py
 
 *.pkl
+mensa_bot.egg-info
 
 # End of https://www.toptal.com/developers/gitignore/api/pycharm

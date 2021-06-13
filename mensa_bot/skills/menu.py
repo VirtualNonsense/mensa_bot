@@ -7,7 +7,7 @@ import logging
 
 import datetime as dt
 
-from services.MensaWebSite import MensaWebSite
+from mensa_bot.services.MensaWebSite import MensaWebSite
 
 
 class MensaMenuHandler(ConversationHandler, CallbackQueryHandler):
@@ -36,7 +36,7 @@ class MensaMenuHandler(ConversationHandler, CallbackQueryHandler):
         keyboard = []
         for l in self.site.get_locations():
             keyboard.append([InlineKeyboardButton(l.name, callback_data="{},{},{}".format(self.command, l.name, l.link))])
-        update.message.reply_text("Für welche Mensa?", reply_markup=InlineKeyboardMarkup(keyboard))
+        update.message.reply_text("Für welche Mensa?", reply_markup=InlineKeyboardMarkup(keyboard), quote=True)
 
     def __button_callback(self, update: Update, context: CallbackContext):
         query = update.callback_query

@@ -5,8 +5,8 @@ import requests
 from lxml import html, etree
 from lxml.html.clean import Cleaner
 
-from models.Food import Food, Menu
-from models.Location import Location
+from mensa_bot.models.Food import Food, Menu
+from mensa_bot.models.Location import Location
 
 priceI = ["(Stud.)", "(Bed.)", "(Gäste)"]
 
