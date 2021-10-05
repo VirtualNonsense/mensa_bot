@@ -1,8 +1,10 @@
+# -*- coding: utf-8 -*-
+
 from telegram.ext import (Updater, CommandHandler, MessageHandler, Filters,
                           ConversationHandler, CallbackQueryHandler, CallbackContext)
 
 from telegram.update import Update
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, parsemode
 import logging
 
 import datetime as dt
@@ -60,4 +62,5 @@ class MensaMenuHandler(ConversationHandler):
                                                                                                 f.priceStudent,
                                                                                                 f.priceStaff,
                                                                                                 f.priceVisitor) + "\n\n"
-            query.edit_message_text(text="{}".format(stri))
+                stri += "\n\n" + r"Wenn du vor Ort essen möchtest registriere dich <a href='https://www.werkswelt.de/mensareservierung'>hier</a>!"
+            query.edit_message_text(text="{}".format(stri), parse_mode=parsemode.ParseMode.HTML)
