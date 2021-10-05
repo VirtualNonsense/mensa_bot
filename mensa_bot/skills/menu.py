@@ -10,7 +10,7 @@ import datetime as dt
 from mensa_bot.services.MensaWebSite import MensaWebSite
 
 
-class MensaMenuHandler(ConversationHandler, CallbackQueryHandler):
+class MensaMenuHandler(ConversationHandler):
     weekDays = dict(Monday="Montag",
                     Tuesday="Dienstag",
                     Wednesday="Mittwoch",
