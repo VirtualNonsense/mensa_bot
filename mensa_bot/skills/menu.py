@@ -62,5 +62,5 @@ class MensaMenuHandler(ConversationHandler):
                                                                                                 f.priceStudent,
                                                                                                 f.priceStaff,
                                                                                                 f.priceVisitor) + "\n\n"
-                stri += "\n\n" + r"Wenn du vor Ort essen möchtest registriere dich <a href='https://www.werkswelt.de/mensareservierung'>hier</a>!"
+                # stri += "\n\n" + r"Wenn du vor Ort essen möchtest registriere dich <a href='https://www.werkswelt.de/mensareservierung'>hier</a>!"
             query.edit_message_text(text="{}".format(stri), parse_mode=parsemode.ParseMode.HTML)
