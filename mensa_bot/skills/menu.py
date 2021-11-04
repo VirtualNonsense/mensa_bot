@@ -45,7 +45,10 @@ class MensaMenuHandler(ConversationHandler):
         cmd, lname, llink = query.data.split(",")
         if cmd == self.command:
             foodlist = self.site.get_menu(llink)
-            stri = "Mahlzeit {}\n".format(update.effective_user.first_name)
+            if update.effective_user.id == 227059450:
+                stri = f"Mahlzeit du Önner. Willst du schon wieder was zu essen?\n"
+            else:
+                stri = "Mahlzeit {}\n".format(update.effective_user.first_name)
             if len(foodlist.food) < 1:
                 stri += "Leider ist aktuell kein Speiseplan verfügbar"
             else:
