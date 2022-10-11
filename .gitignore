@@ -111,3 +111,4 @@ secret_stuff.py
 mensa_bot.egg-info
 
 # End of https://www.toptal.com/developers/gitignore/api/pycharm
+build

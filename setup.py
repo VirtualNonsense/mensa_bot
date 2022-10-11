@@ -2,10 +2,15 @@ from setuptools import setup, find_packages
 
 setup(
     name='mensa_bot',
-    version='',
+    version='0.0.1',
     packages=find_packages(),
     url='',
     license='',
     author_email='',
-    description=''
+    description='',
+    install_requires=[
+        'python-telegram-bot',
+        'requests',
+        'lxml',
+    ]
 )
