@@ -9,7 +9,7 @@ setup(
     author_email='',
     description='',
     install_requires=[
-        'python-telegram-bot',
+        'python-telegram-bot==13.14',
         'requests',
         'lxml',
     ]
